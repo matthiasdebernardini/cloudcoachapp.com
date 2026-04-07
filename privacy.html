@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy - CloudCoach AI</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro', system-ui, sans-serif; background: #111; color: #ddd; line-height: 1.7; }
+  .container { max-width: 720px; margin: 0 auto; padding: 60px 24px; }
+  h1 { font-size: 2rem; margin-bottom: 8px; color: #fff; }
+  .date { color: #888; margin-bottom: 32px; }
+  h2 { color: #00AAFF; margin: 32px 0 12px; font-size: 1.2rem; }
+  p, li { color: #bbb; margin-bottom: 12px; }
+  ul { padding-left: 24px; }
+  a { color: #00AAFF; }
+  footer { margin-top: 60px; color: #555; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Privacy Policy</h1>
+  <p class="date">Effective: April 7, 2026</p>
+
+  <h2>Overview</h2>
+  <p>CloudCoach AI ("CloudCoach Desktop" and "CloudCoach AI" for iOS) is built with privacy as a core principle. Your data stays on your devices. We do not operate servers, collect analytics, or track users.</p>
+
+  <h2>Data Storage</h2>
+  <p>All data is stored locally on your Mac in a DuckDB database within the app's sandbox container. No data is transmitted to our servers because we do not operate any servers. The iOS app communicates directly with the macOS app over a peer-to-peer connection.</p>
+
+  <h2>Third-Party Services</h2>
+  <p>CloudCoach sends your prompts and meal data to <strong>Anthropic's Claude API</strong> using your own API key. Anthropic's privacy policy governs how they handle that data. We do not have access to your API key or your conversations with Claude.</p>
+  <p>Optional integrations (Google Places API for restaurant search, Exa API for menu lookup) also use your own API keys and are subject to those providers' privacy policies.</p>
+
+  <h2>HealthKit Data (iOS)</h2>
+  <p>The iOS app requests read-only access to the following HealthKit data types:</p>
+  <ul>
+    <li>Body measurements (weight, body fat percentage)</li>
+    <li>Activity (steps, active energy, exercise minutes)</li>
+    <li>Heart rate (resting, average)</li>
+    <li>Workouts (type, duration, energy burned)</li>
+    <li>Sleep analysis</li>
+  </ul>
+  <p>This data is synced directly to the macOS app over the peer-to-peer connection and stored in the local database. It is never sent to our servers or any third party (other than Anthropic when contextually relevant to your coaching prompts).</p>
+
+  <h2>Camera and Photos</h2>
+  <p>The iOS app may request camera access for barcode scanning and food photography. Photos are sent to the macOS app for AI analysis and stored locally. They are not uploaded to any external service beyond Anthropic's API for vision analysis.</p>
+
+  <h2>Network Communication</h2>
+  <p>The iOS and macOS apps communicate via <strong>iroh</strong>, a peer-to-peer protocol based on QUIC. When direct connection is not possible, data may be relayed through iroh's relay infrastructure. The macOS app makes outbound HTTPS requests to the Anthropic API.</p>
+
+  <h2>Data We Do NOT Collect</h2>
+  <ul>
+    <li>No analytics or telemetry</li>
+    <li>No crash reports sent to us</li>
+    <li>No advertising identifiers</li>
+    <li>No user accounts or registration</li>
+    <li>No server-side data storage</li>
+  </ul>
+
+  <h2>Children's Privacy</h2>
+  <p>CloudCoach is not directed at children under 13. We do not knowingly collect data from children.</p>
+
+  <h2>Changes</h2>
+  <p>We may update this policy. Changes will be posted on this page with an updated effective date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy? Email <a href="mailto:support@cloudcoachapp.com">support@cloudcoachapp.com</a>.</p>
+
+  <footer>
+    <p>&copy; 2026 Custom Logic Labs LLC. All rights reserved.</p>
+  </footer>
+</div>
+</body>
+</html>
